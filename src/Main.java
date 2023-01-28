@@ -48,7 +48,7 @@ public class Main {
         byte EkaterinaStudents = 30;
         short PaperForStudents = 480;
         int PaperForOneStudents;
-        PaperForOneStudents = 480/(LudmilaStudents+EkaterinaStudents+AnnaStudents);
+        PaperForOneStudents = PaperForStudents/(LudmilaStudents+EkaterinaStudents+AnnaStudents);
 System.out.println("На каждого ученика расчитано "+PaperForOneStudents+" листов бумаги");
     }
     public static void task4() {
@@ -95,15 +95,24 @@ System.out.println("На каждого ученика расчитано "+Pape
     }
     public static void task8() {
         System.out.println("Задача 8");
-        System.out.println("#1");
-        var HoursForWork=640;
-        var HoursForOneWorker=8;
-        var AmountOfWorkers= HoursForWork/HoursForOneWorker;
-        System.out.println("Всего работников в компании - "+AmountOfWorkers+" человек ");
-        System.out.println("#2");
-        AmountOfWorkers=AmountOfWorkers+94;
-        HoursForWork=AmountOfWorkers*HoursForOneWorker;
-        System.out.println("Если в компании работает "+AmountOfWorkers+" человека, то всего "+ HoursForWork+" часов работы может быть поделено между сотрудниками");
+        int MashaLowSalaryMount = 67760;
+        var MashaBigSalaryMount = MashaLowSalaryMount*1.1f;
+        float MashaBigSalaryYear = MashaBigSalaryMount*12;
+        int MashaLowSalaryYear = MashaLowSalaryMount*12;
+        float DifferenceMasha = MashaBigSalaryYear-MashaLowSalaryYear;
+        System.out.println("Маша теперь получает "+MashaBigSalaryMount+" рублей. Годовой доход вырос на  "+ DifferenceMasha+" рублей");
+        int DenisLowSalaryMount = 83690;
+        var DenisBigSalaryMount = DenisLowSalaryMount*1.1f;
+        float DenisBigSalaryYear = DenisBigSalaryMount*12;
+        int DenisLowSalaryYear = DenisLowSalaryMount*12;
+        float DifferenceDenis = DenisBigSalaryYear-DenisLowSalaryYear;
+        System.out.println("Денис теперь получает "+DenisBigSalaryMount+" рублей. Годовой доход вырос на  "+ DifferenceDenis+" рублей");
+        int KristinaLowSalaryMount = 76230;
+        var KristinaBigSalaryMount = KristinaLowSalaryMount*1.1f;
+        float KristinaBigSalaryYear = KristinaBigSalaryMount*12;
+        int KristinaLowSalaryYear = KristinaLowSalaryMount*12;
+        float DifferenceKristina = KristinaBigSalaryYear-KristinaLowSalaryYear;
+        System.out.println("Маша теперь получает "+KristinaBigSalaryMount+" рублей. Годовой доход вырос на  "+ DifferenceKristina+" рублей");
 
     }
 }
